@@ -310,7 +310,7 @@ footer a {
   animation: loader 1s infinite linear;
 }
 
-.modal {
+#modal {
   position: absolute;
   top: -5%;
   left: 50%;
