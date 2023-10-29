@@ -48,7 +48,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Dictionary App',
       filename: 'index.html',
-      template: './src/index.html',
+      template: './index.html',
     }),
     new MiniCssExtractPlugin(),
   ],
