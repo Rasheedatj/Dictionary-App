@@ -46,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack App',
+      title: 'Dictionary App',
       filename: 'index.html',
       template: './src/index.html',
     }),
