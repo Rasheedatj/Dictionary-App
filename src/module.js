@@ -22,7 +22,7 @@ async function getWord() {
 
     setTimeout(function () {
       errorMsg.style.top = '-5%';
-    }, 3000);
+    }, 3500);
   }
 }
 
@@ -81,7 +81,6 @@ function displayWord(data) {
   source.textContent = data[0].sourceUrls[0];
   source.setAttribute('href', data[0].sourceUrls[0]);
   document.querySelector('.word').textContent = data[0].word;
-  searchInput.value = '';
 }
 
 export { getWord };
