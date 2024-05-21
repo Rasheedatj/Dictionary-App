@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+  <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <section>
+      <header>
+        <i class="fa fa-book" aria-hidden="true"></i>
+
+        <div class="mode-toggler">
+          <div class="select">
+            <select name="font" id="fonts">
+              <option value="Inter" selected>Inter</option>
+              <option value="serif">Serif</option>
+              <option value="Poppins">Poppins</option>
+              <option value="Playpen Sans">Playpen Sans</option>
+              <option value="Roboto">Roboto</option>
+            </select>
+            <i class="fa fa-chevron-down down" aria-hidden="true"></i>
+          </div>
+
+          <div>
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              <span class="ball"></span>
+            </label>
+          </div>
+          <!-- <i class="fa fa-bolt mode" aria-hidden="true"></i> -->
+        </div>
+      </header>
+
+      <main>
+        <!-- search bar -->
+        <div class="search">
+          <form action="">
+            <input type="text" placeholder="Enter word..." maxlength="50" />
+          </form>
+
+          <div id="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+      </main>
+
+      <!-- word heading -->
+      <div id="word__heading">
+        <div class="word-box">
+          <h1 class="word">keyword</h1>
+          <p class="transcription">/ˈkiː.wɜːrd/</p>
+        </div>
+
+        <div class="play">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+
+      <section id="word">
+        <div class="speech_box">
+          <!-- speech -->
+          <div class="speech">
+            <p>noun</p>
+            <span></span>
+          </div>
+
+          <!-- meaning -->
+          <div class="meaning">
+            <p class="head">Meaning</p>
+            <ul>
+              <li>A set of keys used to operte a typewriter, computer etc.</li>
+              <li>
+                A component of many instruments including the piano, organ and
+                harpischord consisting of usually black and white keys
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                sunt.
+              </li>
+            </ul>
+          </div>
+
+          <!-- synonyms -->
+          <div class="synonym">
+            <p class="syn">Synonyms</p>
+
+            <div class="syn-words">
+              <p>electronic keyboard</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="speech_box">
+          <!-- speech -->
+          <div class="speech">
+            <p>verb</p>
+            <span></span>
+          </div>
+
+          <!-- meaning -->
+          <div class="meaning">
+            <p class="head">Meaning</p>
+            <ul class="verb">
+              <li>To type on a computer keyboard</li>
+              <q>keyboarding is part of the job I hate</q>
+            </ul>
+          </div>
+        </div>
+        <audio src=""></audio>
+      </section>
+
+      <footer>
+        <p>
+          Source :
+          <a href="#" class="url" target="_blank">https://github.com</a>
+        </p>
+      </footer>
+    </section>
+
+    <div class="loader-container">
+      <div class="custom-loader"></div>
+    </div>
+
+    <div class="modal" id="modal">
+      <p>Audio not available!</p>
+    </div>
+
+    <div class="error" id="modal">
+      <p>Word type not supported</p>
+    </div>
+  </body>
+</html>
